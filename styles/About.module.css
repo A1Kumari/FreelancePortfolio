@@ -1,0 +1,73 @@
+
+  .line {
+    flex-grow: 1;
+    border: none;
+    height: 4px;
+    background-color: #000;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 0;
+    font-size: 3.2rem; /* Adjust font size as needed */
+  }
+  
+  .dot {
+    font-size: 2rem; /* Larger font size for dots */
+    margin: 0 10px; /* Adjust spacing around dots as needed */
+  }
+  
+  .UniversalBtn{
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: transparent;
+  }
+  .horText{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  font-weight: 1000;
+  font-size: 100px;
+  
+  }
+
+  .smallContainer{
+    width: 40%;
+    background-color: black;
+    border-radius: 10px;
+   padding: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .oneLine{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .teamImg{
+    width: 50%;
+    height: 100vh;
+    border-radius: 20px;
+    margin-left: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: center; /* Aligns content in the center horizontally */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column; /* Arranges content in a column */
+  }
+  
+ 

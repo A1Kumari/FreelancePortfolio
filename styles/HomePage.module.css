@@ -1,0 +1,87 @@
+.logo{
+  font-size: 30px;
+  font-weight: 500px;
+}
+.oneLine{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.UniversalBtn{
+  border-radius: 20px;
+  height: 30px;
+  width: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: transparent;
+}
+
+.verticalText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+font-weight: 1000;
+font-size: 100px;
+line-height:0.00000010;
+  writing-mode: vertical-rl; /* Vertical writing from right to left */
+  text-orientation: revert; /* Ensures text is upright */
+  white-space: nowrap; /* Prevents text from wrapping */
+  background-color: #fff !important;
+}
+.greenContainer{
+  background-color: #d5ff3f;
+  width: 50%;
+  border-radius: 20px;
+}
+.smallContainer{
+  background-color: black;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+.teamImg{
+  width: 50%;
+  height: 100vh;
+  border-radius: 20px;
+  margin-left: auto;
+}
+.homeSection {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .homeSection h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .homeSection p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .homeSection .ctaButton {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .homeSection .cta-button:hover {
+    background-color: #e96053;
+  }

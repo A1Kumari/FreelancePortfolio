@@ -1,0 +1,85 @@
+
+  .projectCategory {
+    margin-bottom: 30px;
+  }
+.projectSection{
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  padding: 50px 50px;
+  margin: 0;
+}
+.UniversalBtn{
+  border-radius: 20px;
+  height: 30px;
+  width: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: transparent;
+}
+.horText{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+font-weight: 1000;
+font-size: 100px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Aligns content in the center horizontally */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Allows projects to wrap to the next line */
+  gap: 20px; /* Adds spacing between projects */
+}
+
+
+.project {
+  position: relative; /* Allows absolute positioning of elements inside */
+  width: calc(25% - 20px); /* Adjust width of each project */
+}
+
+.projectInfo {
+  background-color: #f2f2f2; /* Background color for project info */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.projectImage {
+  position: relative;
+  overflow: hidden; /* Hides overflow for the image */
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.projectImage img {
+  width: 100%;
+  display: block;
+}
+
+.project:hover .projectImage {
+  transform: scale(1.05) rotate(3deg); /* Enlarge and tilt image on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adds shadow on hover */
+}
+
+.viewDesign {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.project:hover .vieweDsign {
+  opacity: 1; /* Show on hover */
+}

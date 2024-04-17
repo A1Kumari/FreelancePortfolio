@@ -1,0 +1,40 @@
+.pricingSection {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .pricingPlans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .pricingPlan {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+  }
+  .pricingPlan h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .pricingPlan p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .ctaButton {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .ctaButton:hover {
+    background-color: #e96053;
+  }
