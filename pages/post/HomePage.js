@@ -12,13 +12,17 @@ export default function HomePage() {
           <title>Home Page</title>
         </Head> 
         <section classname={styles.homeSection}>
+        <h1 className={styles.logo}>Claw</h1>
             <div className={styles.oneLine}>
-              <h1 className={styles.logo}>Claw</h1>
+            
               <div className={styles.greenContainer}>
-            <div className={styles.oneLine}>
-               <h1 className={styles.verticalText}>WE</h1>
-               <h1 className={styles.verticalText}>DESIGN</h1>
-               <h1 className={styles.verticalText}>FOR</h1>
+               <div className={styles.oneLine}>
+         
+              <h1 className={`${styles.verticalText} ${styles.heading}`}>WE</h1>
+               <h1 className={`${styles.verticalText} ${styles.heading}`}>DESIGN</h1>
+               <h1 className={`${styles.verticalText} ${styles.heading}`}>FOR YOU</h1>
+         
+               
 
             </div>
                 <p>Discover amazing features and services that we offer!</p>
@@ -29,12 +33,17 @@ export default function HomePage() {
                 <div className={styles.smallContainer}>$425+</div>
                 </div>
                 
+               
             </div>
+            <div className={styles.imgContainer}>
+              <div className={styles.box}>
               <Image src={team} className={styles.teamImg}></Image>  
-              <button className={styles.UniversalBtn}>Menu</button>
+              <button className={styles.menuBtn}><button className={styles.UniversalBtn}>Menu</button></button>
+              </div>
             </div>
-            
-         
+              
+            </div>
+          
                
                {/* <div classname={styles.container}>
                 

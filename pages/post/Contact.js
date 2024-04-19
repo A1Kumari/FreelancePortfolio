@@ -8,10 +8,8 @@ export default function Contact() {
         <Head>
         <title>Contact Me</title>
       </Head>
-      <div className={styles.contactSection}>
-        <h1>LET'S BUILD AND SCALE IT!</h1>
-      </div>
-      <div className={styles.contactSection}>
+     
+      <div className={styles.contactInfo}>
         <h1>Contact Me</h1>
         <div className={styles.contactOptions}>
           <div className={styles.contactOption}>
@@ -31,6 +29,9 @@ export default function Contact() {
             <p>+1 (123) 456-7890</p>
           </div>
         </div>
+      </div>
+      <div className={styles.contactSection}>
+        <h1>LET'S BUILD AND SCALE IT!</h1>
       </div>
       </>
     );
