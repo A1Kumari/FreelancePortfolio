@@ -1,0 +1,114 @@
+/* Container holding the info and form */
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #3D52A0, #7091E6);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    z-index: 99;
+  }
+  
+  /* Info section styling */
+  .infoContainer {
+    flex: 1;
+    padding: 20px;
+    z-index: 99;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    z-index: 99;
+  }
+  
+  .infoContainer p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    z-index: 1000;
+  }
+  
+  .infoContainer a {
+    color: #fff;
+    text-decoration: underline;
+    z-index: 99;
+  }
+  
+  /* Glass effect container for the form */
+  .glassContainer {
+    flex: 1;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+  }
+  
+  /* Form styling */
+  .formHeading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 99;
+  }
+  
+  .contactForm label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  .contactForm button {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3D52A0;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactForm button:hover {
+    background-color: #5C72C7;
+  }
+  
+  /* Ensure proper spacing and layout */
+  .infoContainer,
+  .glassContainer {
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .infoContainer,
+    .glassContainer {
+      margin: 10px 0;
+    }
+  }
+  

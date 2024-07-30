@@ -1,0 +1,79 @@
+.contactContainer {
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 15px; /* Rounded borders */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%;
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    transition: transform 0.1s ease; /* Smooth transition for the tilt effect */
+    transform-style: preserve-3d;
+    overflow: hidden; /* Ensure no unwanted scrollbars */
+    position: relative; /* For positioning child elements like glitter effect */
+  }
+  
+  /* Glitter Effect */
+  .contactContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #3D52A0, #7091E6, #8697C4, #ADBBDA, #EDE8F5);
+    background-size: 400% 400%;
+    animation: glitter 5s ease infinite;
+    opacity: 0.5;
+    z-index: 1; /* Make sure this layer is under the main content */
+  }
+  
+  /* Keyframes for glitter effect */
+  @keyframes glitter {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+  
+  
+  
+  
+  /* Styling for the text */
+  .textContainer {
+    padding: 30px;
+    z-index: -10 !important;
+    height: 80vh;
+    overflow-y: hidden;
+  }
+  
+  .text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3D52A0;
+    opacity: 0.9;
+  }
+  
+  .textRepeat {
+    animation: repeatText 10s linear infinite;
+  }
+  
+  @keyframes repeatText {
+    0%, 100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+  
+  .textVisible {
+    opacity: 1;
+  }
+  
+  /* Adjusting margins for correct positioning */
+  .textContainer {
+    margin-top: 2rem;
+  }
+  
